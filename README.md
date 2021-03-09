@@ -1,1 +1,2 @@
-# KDM_ICP7
+CLAIRE NDOFOR
+cbnk6w@mail.umkc.edu

@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/wanki/ontologies/2021/2/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/wanki/ontologies/2021/2/untitled-ontology-2"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -59,6 +60,9 @@
     <Declaration>
         <NamedIndividual IRI="#Male"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mary"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#Daughter"/>
         <ObjectIntersectionOf>
@@ -109,6 +113,10 @@
         <Class IRI="#Gender"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Ethnicity"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Gender"/>
         <Class IRI="#Person"/>
     </DisjointClasses>
@@ -120,6 +128,20 @@
         <Class IRI="#Gender"/>
         <NamedIndividual IRI="#Male"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Mary"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mary"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FullName"/>
+        <NamedIndividual IRI="#Mary"/>
+        <Literal>Mary Jost</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasChild"/>
         <ObjectProperty IRI="#hasParent"/>
